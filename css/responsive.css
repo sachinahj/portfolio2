@@ -152,7 +152,7 @@
 	.portfolio li h5 {
 		min-width: 130px;
 	}
-	.exprience-image {
+	.experience-image {
 		height: 230px;
 	}
 	.section-padding {
@@ -300,13 +300,13 @@
 	.language-skill {
 		margin-top: 0;
 	}
-	.exprience-info h3 {
+	.experience-info h3 {
 		font-size: 20px;
 	}
-	.exprience-image {
+	.experience-image {
 		min-height: 200px;
 	}
-	.exprience-info h5 {
+	.experience-info h5 {
 		font-size: 14px;
 		margin-bottom: 10px;
 	}
@@ -348,7 +348,7 @@
 		font-size: 40px;
 	}
 	#profile hr,
-	.exprience-section hr {
+	.experience-section hr {
 		margin: 0;
 	}
 	#profile h3 {
@@ -562,13 +562,13 @@
 		display: inline-block;
 		width: 49%;
 	}
-	.exprience-image {
+	.experience-image {
 		float: none;
 		height: inherit;
 		min-height: inherit;
 		margin-top: 10px;
 	}
-	.exprience-info{
+	.experience-info{
 		margin-bottom: 20px
 	}
 	#profile h3 {

@@ -15,7 +15,7 @@
 # Home Banner
 # About Section
 # Skill Section
-# Exprience Section
+# experience Section
 # Education Section
 # Portfolio Section
 # Contact Section
@@ -719,13 +719,13 @@ ul.sub-menu {
 
 .text-info h4 {}
 
-/* Exprience Section */
+/* experience Section */
 
-.exprience-section .exprience {
+.experience-section .experience {
     overflow: hidden;
 }
 
-.exprience-image {
+.experience-image {
     float: left;
     margin-right: 20px;
     width: 175px;
@@ -733,7 +733,7 @@ ul.sub-menu {
     overflow: hidden;
 }
 
-.exprience-section .exprience img {
+.experience-section .experience img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -741,7 +741,7 @@ ul.sub-menu {
     transform: scale(1.1);
 }
 
-.exprience-section .exprience:hover img  {
+.experience-section .experience:hover img  {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
@@ -749,18 +749,18 @@ ul.sub-menu {
     transform: scale(1);
 }
 
-.exprience-info {
+.experience-info {
     font-size: 14px;
     line-height: 24px;
 }
 
-.exprience-info h3 {
+.experience-info h3 {
     margin-bottom: 0;
     line-height: 28px;
     margin-top: 15px;
 }
 
-.exprience-info h5 {
+.experience-info h5 {
     font-size: 16px;
     font-weight: normal;
     margin-top: 0;
@@ -1571,7 +1571,7 @@ h3.widget_title {
 
 a, #contact-section li a i:hover,
 .thumbnail-oberlay, .icons,
-.exprience-image img,
+.experience-image img,
 .btn.btn-primary:before,
 .btn.btn-primary,
 .contact-section .social i,
