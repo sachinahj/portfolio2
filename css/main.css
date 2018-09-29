@@ -160,7 +160,7 @@ a:focus, button:focus, .btn:focus,
 
 #navigation.menu-one .navbar-nav>li {
     float: none;
-    height: 9.1%;
+    height: calc((100% - 65px) / 7);
     position: relative;
     margin-left: 10px;
 }
@@ -230,38 +230,26 @@ a:focus, button:focus, .btn:focus,
 }
 
 #navigation .navbar-nav>li:nth-child(2) {
-    background-color: #f7941d;
-}
-
-#navigation .navbar-nav>li:nth-child(3) {
     background-color: #f26522;
 }
 
-#navigation .navbar-nav>li:nth-child(4) {
+#navigation .navbar-nav>li:nth-child(3) {
     background-color: #ed1c24;
 }
 
-#navigation .navbar-nav>li:nth-child(5) {
-    background-color: #e10337;
-}
-
-#navigation .navbar-nav>li:nth-child(6) {
+#navigation .navbar-nav>li:nth-child(4) {
     background-color: #b90162;
 }
 
-#navigation .navbar-nav>li:nth-child(7) {
-    background-color: #873e95;
-}
-
-#navigation .navbar-nav>li:nth-child(8) {
+#navigation .navbar-nav>li:nth-child(5) {
     background-color: #3c70b4;
 }
 
-#navigation .navbar-nav>li:nth-child(9) {
+#navigation .navbar-nav>li:nth-child(6) {
     background-color: #05ac80;
 }
 
-#navigation .navbar-nav>li:last-child {
+#navigation .navbar-nav>li:nth-child(7) {
     background-color: #87c05e;
 }
 
