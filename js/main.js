@@ -17,11 +17,38 @@
 // -------------------------------------------------------------
 
 $(function() {
+    var form = $(".contact-form");
+    form.on("submit", function(e) {
+        e.preventDefault();
+        var name = form.find("input[name='name']").val();
+        var email = form.find("input[name='email']").val();
+        var subject = form.find("input[name='subject']").val();
+        var message = form.find("textarea[name='message']").val();
+        window.open(`mailto:sachinahj+portfolio@gmail.com?subject=${subject}%20—%20${name}&body=${message}`);
+    });
+});
+
+// -------------------------------------------------------------
+//Mobile Toggle Control
+// -------------------------------------------------------------
+
+$(function() {
     var navMain = $(".navbar-collapse");
     $(".navbar-collapse a").on("click", function() {
         navMain.collapse('hide');
     });
 });
+
+// -------------------------------------------------------------
+// Counter
+// -------------------------------------------------------------
+
+(function() {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+}());
 
 // -------------------------------------------------------------
 // Progress Bar
@@ -63,6 +90,20 @@ $(function() {
                     this.el.children[0].innerHTML = Math.round(percent);
                 }
             });
+        }
+    });
+}());
+
+
+// -------------------------------------------------------------
+// MagnificPopup
+// -------------------------------------------------------------
+
+(function() {
+    $('.portfolio-info a').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
         }
     });
 }());
