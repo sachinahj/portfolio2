@@ -167,6 +167,7 @@ a:focus, button:focus, .btn:focus,
 
 #navigation.menu-one .navbar-nav {
     float: none;
+    height: 100vh;
 }
 
 #navigation.menu-one .navbar-nav> li:hover,
