@@ -118,7 +118,7 @@ $(window).scroll(function(event) {
 
 $('#mainmenu li a').click(function() {
     if ($(".navbar").width() == $(window).width()) {
-        var offset = 65;
+        var offset = $(".navbar-header").height();
     } else {
         var offset = 0;
     }
