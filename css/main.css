@@ -216,10 +216,30 @@ a:focus, button:focus, .btn:focus,
 }
 
 .home-one .logo {
-    height: 65px;
+    background-color: #2d3038;
     float: none;
+    height: 65px;
     margin-left: 10px;
     padding: 4px 30px;
+}
+
+.logo a {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.logo a img {
+    height: 100%;
+    margin-right: 15px;
+}
+
+.logo a h1 {
+    color: white;
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    margin: 0;
 }
 
 .home-one .navbar-nav {
@@ -328,12 +348,6 @@ a:focus, button:focus, .btn:focus,
     background-color: #3c70b4;
     right: 0;
     z-index: -1;
-}
-
-.logo {
-    background-color: #2d3038;
-    height: 76px;
-    padding: 9px 25px 10px 15px;
 }
 
 .menu-two .navbar-fixed-top {
