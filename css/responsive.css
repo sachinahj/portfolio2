@@ -34,6 +34,9 @@
 }
 
 @media (max-width: 991px) {
+	.home-banner .home-row {
+		width: 100%;
+	}
 	#navigation.menu-one .navbar-nav {
 		height: initial;
 	}
@@ -189,6 +192,10 @@
 
 /* xs */
 @media (max-width: 767px) {
+	.banner-content .banner-info {
+		margin-left: 0;
+		width: 100%;
+	}
 	#navigation.menu-one .navbar-nav {
 		height: initial;
 	}
@@ -471,10 +478,8 @@
 	#navigation.menu-one .navbar-nav {
 		height: initial;
 	}
-	.home-banner .banner-content {
-		padding: 0;
-	}
 	.banner-content .banner-info {
+		margin-left: 0;
 		width: 100%;
 	}
 	.banner-info h1 {

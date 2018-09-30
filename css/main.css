@@ -70,6 +70,11 @@ a:focus, button:focus, .btn:focus,
     box-shadow: none !important;
 }
 
+.row {
+    margin: 0;
+    padding: 0;
+}
+
 .section-padding {
     padding-top: 25px;
     padding-bottom: 100px;
@@ -447,9 +452,13 @@ ul.sub-menu {
     background-color: #fff;
 }
 
-.home-banner .container {
+.home-banner .container-fluid {
     margin: 0;
     padding: 0;
+}
+
+.home-banner .home-row {
+    width: 100%;
 }
 
 .home-banner .banner-content {
@@ -458,17 +467,18 @@ ul.sub-menu {
     background-size: cover;
     height: 100vh;
     min-height: 600px;
-    padding: 0 50px;
+    padding: 0;
     position: relative;
 }
 
 .banner-content .banner-info {
     align-items: flex-start;
     background-color: rgba(0, 0, 0, 0.8);
-    bottom: 10px;
+    bottom: 130px;
     flex-direction: column;
     font-size: 14px;
     justify-content: center;
+    margin-left: 100px;
     padding: 0 15px;
     position: absolute;
 }
@@ -888,6 +898,10 @@ img.mfp-img {
 .contact-section li {
     border-bottom: 1px solid #f1f1f1;
     padding: 20px 0;
+}
+
+.contact-section li:last-child {
+    border-bottom: none;
 }
 
 .contact-section h3 {
