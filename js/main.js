@@ -117,7 +117,12 @@ $(window).scroll(function(event) {
 });
 
 $('#mainmenu li a').click(function() {
-    $('html, body').animate({ scrollTop: $(this.hash).offset().top - 1 }, 1000);
+    if ($(".navbar").width() == $(window).width()) {
+        var offset = 65;
+    } else {
+        var offset = 0;
+    }
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top - offset }, 1000);
     return false;
 });
 

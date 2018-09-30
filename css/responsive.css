@@ -1,7 +1,7 @@
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
 	#navigation.menu-one .navbar-nav {
-		height: initial;
+		height: 100vh;
 	}
 	#navigation.menu-one .navbar {
 		width: 27%;
