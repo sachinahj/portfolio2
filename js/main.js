@@ -16,7 +16,7 @@
 //Mobile Toggle Control
 // -------------------------------------------------------------
 
-$(function() {
+(function() {
     var navMain = $(".navbar-collapse");
     $(".navbar-collapse a").on("click", function() {
         navMain.collapse('hide');
@@ -71,37 +71,66 @@ $(function() {
 // Navigation Scroll
 // -------------------------------------------------------------
 
-$(window).scroll(function(event) {
-    Scroll();
-});
+(function() {
+    $(window).scroll(function(event) {
+        Scroll();
+    });
 
-$('#mainmenu li a').click(function() {
-    if ($(".navbar").width() == $(window).width()) {
-        var offset = $(".navbar-header").height();
-    } else {
-        var offset = 0;
-    }
-    $('html, body').animate({ scrollTop: $(this.hash).offset().top - offset }, 1000);
-    return false;
-});
-
-// User define function
-function Scroll() {
-    var contentTop = [];
-    var contentBottom = [];
-    var winTop = $(window).scrollTop();
-    var rangeTop = 200;
-    var rangeBottom = 500;
-    $('#mainmenu').find('.scroll a').each(function() {
-        contentTop.push($($(this).attr('href')).offset().top);
-        contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
-    })
-    $.each(contentTop, function(i) {
-        if (winTop > contentTop[i] - rangeTop) {
-            $('#mainmenu li.scroll')
-                .removeClass('current')
-                .eq(i).addClass('current');
+    $('#mainmenu li a').click(function() {
+        if ($(".navbar").width() == $(window).width()) {
+            var offset = $(".navbar-header").height();
+        } else {
+            var offset = 0;
         }
-    })
+        $('html, body').animate({ scrollTop: $(this.hash).offset().top - offset }, 1000);
+        return false;
+    });
 
-};
+    // User define function
+    function Scroll() {
+        var contentTop = [];
+        var winTop = $(window).scrollTop();
+        var rangeTop = 200;
+        $('#mainmenu').find('.scroll a').each(function() {
+            var sectionId = $(this).attr('href');
+            contentTop.push({
+                sectionId: sectionId,
+                offset: $(sectionId).offset().top,
+            });
+        });
+        var currentSectionId = contentTop[0].sectionId;
+        $.each(contentTop, function(i) {
+            if (winTop > contentTop[i].offset - rangeTop) {
+                currentSectionId = $('#mainmenu li.scroll')
+                    .removeClass('current')
+                    .eq(i)
+                    .addClass('current')
+                    .find('a')
+                    .attr('href');
+            }
+        });
+        gtag('event', 'view', {
+            event_category: 'section',
+            event_label: currentSectionId,
+        });
+    };
+}());
+
+// -------------------------------------------------------------
+// Link Tracking
+// -------------------------------------------------------------
+
+(function() {
+    $('a[data-track]').click(function(e) {
+        e.preventDefault();
+        var url = this.href;
+        var label = this.dataset.track;
+        var redirect = function () { document.location = url; }
+        gtag('event', 'click', {
+            event_category: 'outbound',
+            event_label: label,
+            event_callback: redirect,
+        });
+        setTimeout(redirect, 1000);
+    });
+}());

@@ -5,9 +5,8 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126648196-1"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag() { dataLayer.push(arguments); }
           gtag('js', new Date());
-
           gtag('config', 'UA-126648196-1');
         </script>
 
@@ -56,7 +55,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="navbar-brand logo">
-                            <a href="/">
+                            <a data-track="root:nav" href="/">
                                 <img class="img-responsive" src="images/profile.png" alt="Profile" />
                                 <h1 class="signature">Sachin Ahuja</h1>
                             </a>
@@ -65,13 +64,13 @@
 
                     <nav id="mainmenu" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="scroll current dropdown"><a href="#home-banner">
+                            <li class="scroll current"><a href="#home">
                                 <span><i class="fa fa-hand-peace-o" aria-hidden="true"></i>Home</span></a>
                             </li>
                             <li class="scroll"><a href="#about">
                                 <span><i class="fa fa-user-secret" aria-hidden="true"></i>About me</span></a>
                             </li>
-                            <li class="scroll"><a href="#skill">
+                            <li class="scroll"><a href="#skills_and_interests">
                                 <span><i class="fa fa-sliders" aria-hidden="true"></i>Skills &amp; Interests</span></a>
                              </li>
                             <li class="scroll"><a href="#experience">
@@ -85,8 +84,8 @@
                             </li>
                             <li>
                                 <ul class="social list-inline">
-                                    <li><a href="https://www.linkedin.com/in/sachinahj"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://github.com/sachinahj"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                                    <li><a data-track="social:linkedin:nav" href="https://www.linkedin.com/in/sachinahj"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a data-track="social:github:nav" href="https://github.com/sachinahj"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -94,7 +93,7 @@
                 </div><!-- navbar -->
             </div><!-- navigation -->
 
-            <div id="home-banner" class="home-banner">
+            <div id="home" class="home-banner">
                 <div class="container-fluid">
                     <div class="row home-row">
                         <div class="banner-content">
@@ -106,7 +105,7 @@
                         </div>
                     </div><!-- row -->
                 </div><!-- container -->
-            </div><!-- home-banner -->
+            </div><!-- home -->
 
             <div id="about" class="about-section section-padding">
                 <div class="container-fluid">
@@ -125,14 +124,14 @@
                                 </div>
                             </div>
                             <div class="button">
-                                <a href="resume_sachin.pdf" class="btn btn-primary">Download Resume</a>
+                                <a data-track="resume:about" href="resume_sachin.pdf" class="btn btn-primary">Download Resume</a>
                             </div>
                         </div>
                     </div><!-- row -->
                 </div><!-- container -->
             </div><!-- about section -->
 
-            <div id="skill" class="skill-section bg-color section-padding">
+            <div id="skills_and_interests" class="skill-section bg-color section-padding">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-8">
@@ -364,7 +363,7 @@
                                                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                                             </div>
                                             <h3>LinkedIn </h3>
-                                            <a href="https://www.linkedin.com/in/sachinahj">sachinahj</a>
+                                            <a data-track="social:linkedin:contact:linkedin" href="https://www.linkedin.com/in/sachinahj">sachinahj</a>
                                         </li>
                                         <li>
                                             <div class="icons">
@@ -379,8 +378,8 @@
                                             </div>
                                             <h3>Social Profiles</h3>
                                             <ul class="social list-inline">
-                                                <li><a href="https://www.linkedin.com/in/sachinahj"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                                <li><a href="https://github.com/sachinahj"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                                                <li><a data-track="social:linkedin:contact:social_profiles" href="https://www.linkedin.com/in/sachinahj"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                                <li><a data-track="social:github:contact:social_profiles" href="https://github.com/sachinahj"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
                                             </ul>
                                         </li>
                                     </ul>
