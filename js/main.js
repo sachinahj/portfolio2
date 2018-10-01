@@ -87,6 +87,7 @@
     });
 
     // User define function
+    var currentSectionId = null;
     function Scroll() {
         var sections = [];
         var winTop = $(window).scrollTop();
@@ -98,10 +99,10 @@
                 offset: $(sectionId).offset().top,
             });
         });
-        var currentSectionId = sections[0].id;
+        var newSectionId = sections[0].id;
         $.each(sections, function(i) {
             if (winTop > sections[i].offset - rangeTop) {
-                currentSectionId = $('#mainmenu li.scroll')
+                newSectionId = $('#mainmenu li.scroll')
                     .removeClass('current')
                     .eq(i)
                     .addClass('current')
@@ -109,10 +110,13 @@
                     .attr('href');
             }
         });
-        gtag('event', 'view', {
-            event_category: 'section',
-            event_label: currentSectionId.replace("#", ""),
-        });
+        if (currentSectionId != newSectionId) {
+            gtag('event', 'view', {
+                event_category: 'section',
+                event_label: newSectionId.replace("#", ""),
+            });
+            currentSectionId = newSectionId
+        }
     };
 }());
 
