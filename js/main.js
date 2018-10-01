@@ -88,19 +88,19 @@
 
     // User define function
     function Scroll() {
-        var contentTop = [];
+        var sections = [];
         var winTop = $(window).scrollTop();
         var rangeTop = 200;
         $('#mainmenu').find('.scroll a').each(function() {
             var sectionId = $(this).attr('href');
-            contentTop.push({
-                sectionId: sectionId,
+            sections.push({
+                id: sectionId,
                 offset: $(sectionId).offset().top,
             });
         });
-        var currentSectionId = contentTop[0].sectionId;
-        $.each(contentTop, function(i) {
-            if (winTop > contentTop[i].offset - rangeTop) {
+        var currentSectionId = sections[0].id;
+        $.each(sections, function(i) {
+            if (winTop > sections[i].offset - rangeTop) {
                 currentSectionId = $('#mainmenu li.scroll')
                     .removeClass('current')
                     .eq(i)
@@ -111,7 +111,7 @@
         });
         gtag('event', 'view', {
             event_category: 'section',
-            event_label: currentSectionId,
+            event_label: currentSectionId.replace("#", ""),
         });
     };
 }());
