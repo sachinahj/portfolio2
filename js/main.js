@@ -16,7 +16,7 @@
 //Mobile Toggle Control
 // -------------------------------------------------------------
 
-(function() {
+$(function() {
     var navMain = $(".navbar-collapse");
     $(".navbar-collapse a").on("click", function() {
         navMain.collapse('hide');
@@ -27,7 +27,7 @@
 // Progress Bar
 // -------------------------------------------------------------
 
-(function() {
+$(function() {
     $('.progress-content').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
         if (visible) {
             $.each($('div.progress-bar'), function() {
@@ -51,7 +51,7 @@
 // EasyPieChart
 // -------------------------------------------------------------
 
-(function() {
+$(function() {
     $('.language-skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
         if (visible) {
             $('.chart').easyPieChart({
@@ -71,7 +71,7 @@
 // Navigation Scroll
 // -------------------------------------------------------------
 
-(function() {
+$(function() {
     $(window).scroll(function(event) {
         Scroll();
     });
@@ -124,7 +124,7 @@
 // Link Tracking
 // -------------------------------------------------------------
 
-(function() {
+$(function() {
     $('a[data-track]').click(function(e) {
         e.preventDefault();
         var url = this.href;
