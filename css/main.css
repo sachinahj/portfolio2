@@ -240,7 +240,7 @@ a:focus, button:focus, .btn:focus,
     margin-right: 15px;
 }
 
-.logo a h1 {
+.logo a .signature {
     color: white;
     font-family: 'Sacramento', cursive;
     font-size: 30px;
@@ -520,7 +520,7 @@ ul.sub-menu {
     line-height: 24px;
 }
 
-.about-info .signature h1 {
+.about-info .signature {
     font-weight: normal;
     margin-top: 20px;
     margin-bottom: 40px;
