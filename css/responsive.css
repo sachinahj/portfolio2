@@ -380,9 +380,6 @@
 	.blog-social {
 	    margin: 20px 0;
 	}
-	#navigation.menu-one .navbar-nav > li i {
-		display: none;
-	}
 	#navigation.menu-one .navbar-nav > li ul li a:hover i,
 	#navigation.menu-one .navbar-nav > li ul li i {
 		display: block;
@@ -408,13 +405,10 @@
 	}
 	#navigation.menu-one .navbar-nav > li.current span,
 	#navigation.menu-one .navbar-nav > li:hover span {
-		left: 25px;
+		left: 75px;
 	}
 	#navigation .navbar-nav {
 		margin-top: 0;
-	}
-	#navigation .navbar-nav>li .social {
-		left: 25px;
 	}
 	.menu-one .container {
 		padding: 0;
