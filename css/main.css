@@ -615,10 +615,6 @@ ul.sub-menu {
     background-color: #87c05e;
 }
 
-.language-skill {
-    margin-top: 50px;
-}
-
 .language-skill canvas {
     display: none;
 }
@@ -704,7 +700,6 @@ ul.sub-menu {
     display: flex;
     flex-direction: row;
     width: 100%;
-
 }
 
 .experience-image {
@@ -751,6 +746,11 @@ ul.sub-menu {
 
 
 /* Education Section */
+
+.education-info {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 .education-info img {
     height: 70px;
