@@ -699,6 +699,8 @@ ul.sub-menu {
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -732,6 +734,10 @@ ul.sub-menu {
     line-height: 24px;
 }
 
+.experience-info h3 {
+    margin-top: 0;
+}
+
 .experience-info h4 {
     font-style: italic;
 }
@@ -742,6 +748,7 @@ ul.sub-menu {
 
 .experience-info h6 {
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 
