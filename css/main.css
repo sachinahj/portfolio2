@@ -142,7 +142,7 @@ a:focus, button:focus, .btn:focus,
 
 #navigation.menu-one .navbar-nav>li {
     float: none;
-    height: calc((100% - 65px) / 7);
+    height: calc((100% - 65px) / 8);
     position: relative;
     margin-left: 10px;
 }
@@ -245,14 +245,18 @@ a:focus, button:focus, .btn:focus,
 }
 
 #navigation .navbar-nav>li:nth-child(5) {
-    background-color: #3c70b4;
+    background-color: #873e95;
 }
 
 #navigation .navbar-nav>li:nth-child(6) {
-    background-color: #05ac80;
+    background-color: #3c70b4;
 }
 
 #navigation .navbar-nav>li:nth-child(7) {
+    background-color: #05ac80;
+}
+
+#navigation .navbar-nav>li:nth-child(8) {
     background-color: #87c05e;
 }
 
@@ -774,6 +778,58 @@ ul.sub-menu {
 
 .education-info h6 {
     font-weight: normal;
+}
+
+/* Portfolio Section */
+
+.portfolio-item {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ef6e30;
+    color: #fff;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    top: 0;
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.portfolio-info h3 {
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.portfolio-info a {
+    font-size: 30px;
+    color: #fff;
+}
+
+.portfolio-info a:hover {
+    color: #bb460d;
 }
 
 /*Magnific-popup overwrite CSS*/
