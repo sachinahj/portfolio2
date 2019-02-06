@@ -806,11 +806,16 @@ ul.sub-menu {
     height: 100%;
     background-color: #ed1c24;
     color: #fff;
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -ms-transition: all 500ms;
-    -o-transition: all 500ms;
-    transition: all 500ms;
+}
+
+@media only screen and (min-width: 768px) {
+    .portfolio-overlay {
+        -webkit-transition: all 500ms;
+        -moz-transition: all 500ms;
+        -ms-transition: all 500ms;
+        -o-transition: all 500ms;
+        transition: all 500ms;
+    }
 }
 
 .portfolio-overlay1 {
