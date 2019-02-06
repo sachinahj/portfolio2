@@ -36,7 +36,7 @@ ul {
     list-style:none;
 }
 
-a{
+a {
     color: #2d3038;
 }
 
@@ -71,7 +71,7 @@ a:focus, button:focus, .btn:focus,
 }
 
 .bg-color {
-    background-color: #f9f9f9;
+    background-color: #f6f6f6;
     position: relative;
 }
 
@@ -82,7 +82,7 @@ a:focus, button:focus, .btn:focus,
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #f9f9f9;
+    background-color: #f6f6f6;
     display: block;
 }
 
@@ -229,7 +229,7 @@ a:focus, button:focus, .btn:focus,
 }
 
 #navigation .navbar-nav>li:nth-child(1) {
-    background-color: #f4bf00;
+    background-color: #ed1c24;
 }
 
 #navigation .navbar-nav>li:nth-child(2) {
@@ -237,15 +237,15 @@ a:focus, button:focus, .btn:focus,
 }
 
 #navigation .navbar-nav>li:nth-child(3) {
-    background-color: #ed1c24;
+    background-color: #f4bf00;
 }
 
 #navigation .navbar-nav>li:nth-child(4) {
-    background-color: #b90162;
+    background-color: #87c05e;
 }
 
 #navigation .navbar-nav>li:nth-child(5) {
-    background-color: #873e95;
+    background-color: #05ac80;
 }
 
 #navigation .navbar-nav>li:nth-child(6) {
@@ -253,11 +253,11 @@ a:focus, button:focus, .btn:focus,
 }
 
 #navigation .navbar-nav>li:nth-child(7) {
-    background-color: #05ac80;
+    background-color: #873e95;
 }
 
 #navigation .navbar-nav>li:nth-child(8) {
-    background-color: #87c05e;
+    background-color: #b90162;
 }
 
 #navigation .navbar-nav>li .social {
@@ -651,6 +651,7 @@ ul.sub-menu {
     margin: 0 auto;
 }
 
+
 .language-skill .percent1 {
     background-color: #f26522;
 }
@@ -672,8 +673,13 @@ ul.sub-menu {
 }
 
 .language-skill .percent6 {
+    background-color: #873e95;
+}
+
+.language-skill .percent7 {
     background-color: #87c05e;
 }
+
 
 .language-skill .percent:after {
     content: '%';
@@ -683,7 +689,6 @@ ul.sub-menu {
     text-align: center;
     font-size: 16px;
     font-weight: normal;
-    text-transform: capitalize;
 }
 
 .text-info {
@@ -788,19 +793,48 @@ ul.sub-menu {
     overflow: hidden;
 }
 
+.portfolio-item img {
+    height: 264px;
+    width: 360px;
+}
+
 .portfolio-overlay {
     position: absolute;
     top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ef6e30;
+    background-color: #ed1c24;
     color: #fff;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
     -ms-transition: all 500ms;
     -o-transition: all 500ms;
     transition: all 500ms;
+}
+
+.portfolio-overlay1 {
+    background-color: #f26522;
+}
+
+.portfolio-overlay2 {
+    background-color: #b90162;
+}
+
+.portfolio-overlay3 {
+    background-color: #87c05e;
+}
+
+.portfolio-overlay4 {
+    background-color: #05ac80;
+}
+
+.portfolio-overlay5 {
+    background-color: #3c70b4;
+}
+
+.portfolio-overlay6 {
+    background-color: #873e95;
 }
 
 .portfolio-item:hover .portfolio-overlay {
@@ -823,13 +857,9 @@ ul.sub-menu {
     margin-bottom: 0;
 }
 
-.portfolio-info a {
+.portfolio-info i {
     font-size: 30px;
     color: #fff;
-}
-
-.portfolio-info a:hover {
-    color: #bb460d;
 }
 
 /*Magnific-popup overwrite CSS*/
