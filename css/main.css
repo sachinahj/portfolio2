@@ -283,7 +283,6 @@ a:focus, button:focus, .btn:focus,
 
 #navigation .navbar-nav>li ul li a:hover i {
     font-size: 16px;
-    color: #000;
 }
 
 #navigation .navbar {
@@ -927,7 +926,7 @@ img.mfp-img {
 }
 
 .contact-section li a:hover {
-    color: #87c05e;
+    color: #0e76a8;
 }
 
 .contact-section li:hover .icons,
@@ -949,19 +948,15 @@ img.mfp-img {
 }
 
 .contact-section .icons {
-    color: #f7941d;
+    color: #0e76a8;
 }
 
 .contact-section .icons1 {
-    color: #ed1c24;
+    color: #05ac80;
 }
 
 .contact-section .icons2{
     color: #b90162;
-}
-
-.contact-section .icons3 {
-    color: #3c70b4;
 }
 
 .contact-section .social li {
@@ -973,32 +968,12 @@ img.mfp-img {
     margin-left: 10px;
 }
 
-.contact-section .social a {
-    color: #2d3038;
+.social i.fa-linkedin:hover {
+    color: #0e76a8;
 }
 
-.contact-section .social i.fa-facebook:hover {
-    color: #4060A5;
-}
-
-.contact-section .social i.fa-twitter:hover {
-    color: #00ABE3;
-}
-
-.contact-section .social i.fa-google-plus:hover {
-    color: #E64522;
-}
-
-.contact-section .social i.fa-dribbble:hover {
-    color: #EA4C89;
-}
-
-.contact-section .social i.fa-behance:hover {
-    color: #2E99D1;
-}
-
-.contact-section .social i.fa-github-alt:hover {
-    color: #417DB9;
+.social i.fa-github-alt:hover {
+    color: #000000;
 }
 
 .contact {
@@ -1086,11 +1061,11 @@ a, #contact-section li a i:hover,
 .contact-section .social i,
 .navbar-nav>li, .navbar-nav>li ul li i,
 .navbar-nav > li span {
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -ms-transition: all 500ms;
-    -o-transition: all 500ms;
-    transition: all 500ms;
+    -webkit-transition: all 250ms;
+    -moz-transition: all 250ms;
+    -ms-transition: all 250ms;
+    -o-transition: all 250ms;
+    transition: all 250ms;
 }
 
 

@@ -75,7 +75,7 @@ $(function() {
         Scroll();
     });
 
-    $('#mainmenu li a').click(function() {
+    $('#mainmenu li a.nav-item').click(function() {
         if ($(".navbar").width() == $(window).width()) {
             var offset = $(".navbar-header").height();
         } else {
@@ -126,9 +126,17 @@ $(function() {
 $(function() {
     $('a[data-track]').click(function(e) {
         e.preventDefault();
+        var target = this.target;
         var url = this.href;
         var label = this.dataset.track;
-        var redirect = function () { document.location = url; }
+        var redirect = function () {
+            console.log("target", target);
+            if (target === '_blank') {
+                window.open(url);
+            } else {
+                document.location = url;
+            }
+        }
         gtag('event', 'click', {
             event_category: 'outbound',
             event_label: label,
