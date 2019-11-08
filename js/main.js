@@ -125,24 +125,40 @@ $(function() {
 // -------------------------------------------------------------
 
 $(function() {
+
+    var isAdBlockEnabled = (function AdBlockEnabled() {
+        var ad = document.createElement('ins');
+        ad.className = 'AdSense';
+        ad.style.display = 'block';
+        ad.style.position = 'absolute';
+        ad.style.top = '-1px';
+        ad.style.height = '1px';
+        document.body.appendChild(ad);
+        isAdBlockEnabled = !ad.clientHeight;
+        document.body.removeChild(ad);
+        return isAdBlockEnabled;
+    })();
+
     $('a[data-track]').click(function(e) {
+        console.log("e", e);
         e.preventDefault();
-        var target = this.target;
-        var url = this.href;
-        var label = this.dataset.track;
+        var self = this;
+        var _redirect = function() {};
         var redirect = function () {
-            console.log("target", target);
-            if (target === '_blank') {
-                window.open(url);
+            console.log("self.target", self.target);
+            _redirect = function() {};
+            if (self.target === '_blank') {
+                window.open(self.href);
             } else {
-                document.location = url;
+                document.location = self.href;
             }
         }
+        _redirect = redirect;
         gtag('event', 'click', {
             event_category: 'outbound',
-            event_label: label,
-            event_callback: redirect,
+            event_label: this.dataset.track,
+            event_callback: _redirect,
         });
-        setTimeout(redirect, 1000);
+        setTimeout(_redirect, 1000);
     });
 }());
