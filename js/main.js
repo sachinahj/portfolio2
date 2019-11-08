@@ -143,22 +143,24 @@ $(function() {
         console.log("e", e);
         e.preventDefault();
         var self = this;
-        var _redirect = function() {};
+        var _redirect = true
         var redirect = function () {
-            console.log("self.target", self.target);
-            _redirect = function() {};
+            console.log("_redirect", _redirect);
+            if (!_redirect) {
+                return;
+            }
             if (self.target === '_blank') {
                 window.open(self.href);
             } else {
                 document.location = self.href;
             }
+            _redirect = false
         }
-        _redirect = redirect;
         gtag('event', 'click', {
             event_category: 'outbound',
             event_label: this.dataset.track,
-            event_callback: _redirect,
+            event_callback: redirect,
         });
-        setTimeout(_redirect, 1000);
+        setTimeout(redirect, 1000);
     });
 }());
