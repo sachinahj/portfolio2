@@ -72,6 +72,7 @@ $(function() {
 
 $(function() {
     $(window).scroll(function(event) {
+        $('.navbar-collapse').collapse('hide');
         Scroll();
     });
 
